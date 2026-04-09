@@ -45,10 +45,38 @@
                 </li>
             </ul>
         </nav>
+        <div class="menu-toggle" onclick="menu()">
+            <i class="fa fa-bars"></i>
+        </div>
     </header>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        function menu(){
+            $("#menu").toggle();
+        }
+    </script>
+
     <body>
     <div class="fundo">
-        <img src="img/fundo.jpeg" alt="Imagem de Fundo" title="Imagem de fundo">
+        <img class="fundo" src="img/fundo.jpeg" alt="Imagem de Fundo" title="Imagem de fundo">
+        
+        <p class="titulo">
+            Fuga em <br>
+            <span> Mystic Falls</span> <br>
+        </p>
+
+        <p class="subtitulo">
+          Corra, pule e escape da floresta <br>
+          misteriosa no jogo de aventura!
+        </p>
+
+        <a class="botao" href="jogar.html">
+            JOGAR
+        </a>
+    </div>
+    <div class="fundoCel">
+        <img class="fundoCel" src="img/fundoCel.png" alt="Imagem de Fundo" title="Imagem de fundo">
         
         <p class="titulo">
             Fuga em <br>

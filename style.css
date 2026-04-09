@@ -2,17 +2,170 @@ body{
   margin: 0;
 }
 
+
+header{
+  background-color: black;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  height: 100px;
+  z-index: 999;
+}
+
+.menu-toggle{
+  display: block;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+
+header img{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.fundoCel{
+  position: relative;
+  width: 100%;
+}
+
+.fundoCel::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background:linear-gradient(transparent, black);
+
+}
+
+.fundoCel img{
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.fundo{
+  display: none;
+}
+
+.titulo{
+  color: #f6d4dc;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  font-size: 50px;
+  font-family: Playfair;
+  font-weight: 800;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.7);
+
+}
+
+.titulo span{
+  color: #c30f1e;
+}
+
+.subtitulo{
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  color: white;
+  font-size: 17px;
+  font-family: Playfair;
+}
+
+.botao {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 800;
+  text-decoration: none;
+
+  background-color: #b00b19;
+  padding: 12px 30px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #ff1a2f;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+footer{
+  background-color: black ;
+  margin: 0;
+  padding: 50px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  color: #FFF; 
+  font-size: 16px;
+  font-family: Raleway;
+}
+
+footer a{
+  text-decoration: none;
+  margin: 20px;
+  background-color: #b00b19;
+  border-radius: 100px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icones{
+  display: flex;
+}
+
+
+@media screen and (min-width: 760px) {  
+body{
+  margin: 0;
+}
+
+.fundoCel{
+  display: none;
+}
+
 header{
   position: fixed;
-  display: inline-block;
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
   width: 100%;
   background-color: black;
   top: 0;
   padding: 10px;
   box-sizing: border-box;
   height: 100px;
-  align-items: center;
   z-index: 999;
+}
+
+.menu-toggle{
+  display: none;
 }
 
 header nav{
@@ -126,10 +279,6 @@ ul img{
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-@media screen {
-
-}
-
 footer{
   background-color: black ;
   margin: 0;
@@ -161,4 +310,5 @@ footer a{
 
 .icones{
   display: flex;
+}
 }
