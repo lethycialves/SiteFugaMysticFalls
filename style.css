@@ -29,7 +29,7 @@ header img{
   width: 200px;
   display: flex;
   align-items: center;
-  margin-left: 80px;
+  margin-left: 15%;
 }
 
 .fundoCel{
@@ -62,8 +62,8 @@ header img{
 .titulo{
   color: #f6d4dc;
   position: absolute;
-  top: 0;
-  left: 20%;
+  top: 10%;
+  left: 7%;
   font-size: 50px;
   font-family: Playfair;
   font-weight: 800;
@@ -77,8 +77,8 @@ header img{
 
 .subtitulo{
   position: absolute;
-  top: 25%;
-  left: 20%;
+  top: 35%;
+  left: 7%;
   color: white;
   font-size: 17px;
   font-family: Playfair;
@@ -86,8 +86,8 @@ header img{
 
 .botao {
   position: absolute;
-  top: 40%;
-  left: 35%;
+  top: 52%;
+  left: 23%;
   transform: translate(-50%, -50%);
 
   color: white;
