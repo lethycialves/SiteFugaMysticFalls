@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../assets/img/icone.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuga em Mystic Falls</title>
+  <link rel="stylesheet" href="ComoJogar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="conteudo">
+    <header>
+      <a class="imgTeste" href="index.html" title="Home">
+        <img src="../assets/img/logo.png" alt="logo" title="logo" />
+      </a>
+      <button class="menu-toggle">☰</button>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html" title="Início"> Início </a>
+          </li>
+          <li>
+            <a href="../sobre/sobre.html" title="Sobre">
+              Sobre
+            </a>
+          </li>
+          <li>
+            <a href="../contato/contato.html" title="Contato">
+              Contato
+            </a>
+          </li>
+          <li>
+            <a href="../ComoJogar/ComoJogar.html" title="Como Jogar">
+              Como Jogar
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="fundo">
+      <p class="titulo">
+        Sobre o Jogo Fuga em Mystic Falls
+      </p>
+
+      <a class="botao" href="../jogar/jogar.html"> JOGAR </a>
+    </div>
+  </div>
+  <footer>
+    <p>Desenvolvido por Lethycia Alves</p>
+    <div class="icones">
+      <a href="https://www.instagram.com/" title="instagram">
+        <i class="fa-brands fa-instagram" style="color: white;"></i>
+      </a>
+
+      <a href="http://wa.me/5544999900604" title="Whatsapp">
+        <i class="fa-brands fa-whatsapp" style="color: white;"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/lethycia-alves-7a9a093aa?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+        style="color: white;" title="Linkedin">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+  <script>
+    const btn = document.querySelector(".menu-toggle");
+    const menu = document.querySelector("nav ul");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>
